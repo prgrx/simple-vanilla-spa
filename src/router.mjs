@@ -8,7 +8,8 @@ import { define } from './define.mjs'
 define(
   AboutPage,
   ContactPage,
-  HomePage
+  HomePage,
+  ErrorPage
 )
 
 const root = '/app'
