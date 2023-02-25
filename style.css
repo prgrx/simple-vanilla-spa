@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: aqua;
+    flex: 1;
+}

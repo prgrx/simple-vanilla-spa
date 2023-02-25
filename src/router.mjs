@@ -15,7 +15,7 @@ const root = '/app'
 
 const routes = [
   {
-    paths: ['/', '/home'],
+    paths: ['', '/', '/home'],
     load: HomePage
   },
   {
