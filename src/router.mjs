@@ -12,7 +12,7 @@ define(
 	ErrorPage
 )
 
-const root = '/app'
+const root = '' //'/app'
 
 const routes = [
 	{
@@ -48,11 +48,14 @@ window.addEventListener('popstate', loadRoute)
 
 export function loadRouteFromLink(event, link) {
 		event.preventDefault()
-		history.pushState(null, null, link)
+        if (root) link = link.origin + root + link.pathname
+        history.pushState(null, null, link)
 		loadRoute()
 }
 
 const navLinks = document.querySelectorAll('header nav a')
-navLinks.forEach(a => { a.addEventListener('click', () => { loadRouteFromLink(event, a.href) }) })
+navLinks.forEach(a => { 
+    a.addEventListener('click', () => { loadRouteFromLink(event, new URL(a.href)) }) 
+})
 
 loadRoute()

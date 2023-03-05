@@ -16,7 +16,7 @@ header {
 
 main {
 	padding: 5px;
-    background-color: aqua;
+    /*background-color: aqua;*/
     flex: 1;
 	overflow: auto;
 }
