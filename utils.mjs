@@ -1,9 +1,6 @@
-export function selectTab(path) {
-    document.querySelector(`nav > a[href="${path}"]`).style.color = 'red'
-}
+import {selectTab, mainTabs, mainSliderCircle, roundButtons} from "./src/router.mjs"
 
-export function unselectTab(path) {
-    let tab = document.querySelector(`nav > a[href="${path}"]`)
-    tab.style.removeProperty('color')
-    if (tab.style.length == 0) tab.removeAttribute('style')
+export function tab(path) {
+    let tab = document.querySelector(`[data-link="${path}"]`)
+    if (tab) selectTab(tab)
 }

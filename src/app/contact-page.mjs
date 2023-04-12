@@ -1,4 +1,6 @@
-import {selectTab, unselectTab} from "../../utils.mjs"
+//import {tab} from "../../utils.mjs"
+
+import {selectTab} from "../router.mjs"
 
 export class ContactPage extends HTMLElement {
 
@@ -13,7 +15,7 @@ export class ContactPage extends HTMLElement {
     }
 
     disconnectedCallback() {
-        unselectTab('/contact')
+        //tab('/contact')
     }
     
 }
