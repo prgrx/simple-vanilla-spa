@@ -18,9 +18,14 @@ main {
 }
 
 a {
+    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
 
+a:hover {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
 
 
 /*****************************************************/

@@ -9,7 +9,7 @@ export class ErrorPage extends HTMLElement {
 		this.innerHTML = `
 			<h1>Error</h1>
 			<p>Nat fouuunnnd. Ya kno wat I'm sayin?</p>
-			<a href="/home">Go back home</a>
+			<a data-link="/home">Go back home</a>
 
 	<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" width="100px" height="100px">
 	  <circle cx="60" cy="10" r="10">

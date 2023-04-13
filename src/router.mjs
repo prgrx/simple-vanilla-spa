@@ -24,7 +24,7 @@ const routes = [
 		load: HomePage
 	},
 	{
-		paths: ['/about', '/sobre'],
+		path: '/new',
 		load: AboutPage
 	},
 	{
