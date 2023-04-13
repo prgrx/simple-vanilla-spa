@@ -37,6 +37,18 @@ a {
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background: #fff; 
+}
+
 :root {
   --background-color: #bbdefb;
   --blue-50: #e3f2fd;

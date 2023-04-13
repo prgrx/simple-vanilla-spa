@@ -2,14 +2,18 @@ import { AboutPage } from './app/about-page.mjs'
 import { HomePage } from './app/home-page.mjs'
 import { ContactPage } from './app/contact-page.mjs'
 import { ErrorPage } from './app/error-page.mjs'
+import { ExpenseTracker } from './app/components/expenses-tracker.js' 
 
 import { define } from './define.mjs'
 
 define(
+	/* PAGES */
 	AboutPage,
 	ContactPage,
 	HomePage,
-	ErrorPage
+	ErrorPage,
+	/* COMPONENTS */
+	ExpenseTracker	
 )
 
 const root = '/expenses'

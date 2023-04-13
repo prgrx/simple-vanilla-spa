@@ -1,4 +1,7 @@
-class ExpenseTracker extends HTMLElement {
+export class ExpenseTracker extends HTMLElement {
+
+	static selector = 'expense-tracker'
+
 	constructor() {
 	  super();
   
@@ -51,4 +54,4 @@ class ExpenseTracker extends HTMLElement {
 	}
   }
   
-  customElements.define('expense-tracker', ExpenseTracker);
+//  customElements.define('expense-tracker', ExpenseTracker);
